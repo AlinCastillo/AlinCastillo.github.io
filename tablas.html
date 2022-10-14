@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas</title>
+<link href="style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Tablas en html</h1>
+</header>
+<nav>
+	<ul id="Menú">
+	<li>
+      <a href="mi_ejercicio_diseñointer.html">Formatos de texto</a></li>
+		<li><a href="ejercicio htcss.html">Listas</a></li>
+		<li><a href="enlaces.html">Enlaces</a></li>
+		<li><a href="imagenes.html">Imágenes</a></li>
+		<li><a href="audios.html">Audios</a></li>
+		<li><a href="video.html">Videos</a></li>
+		<li><a href="Formularios.html">Formularios</a></li>
+		<li><a href="index.html">HOME</a></li>
+		
+	</ul>
+	</nav>
+<main>
+  <section>
+    <h2>Tabla desde código</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+    <table border="1" id="tabla_1">
+	  	<thead>
+		  <tr>
+			<th>
+			  Nombre</th>
+			  <th>Taller</th>
+			  <th>Email</th>
+			  <th>Costo</th>
+			</tr>
+		  </thead>
+		  <tbody>
+		  	<tr>
+			  	<td>Alicia Roldán</td>
+				<td>Pintura</td>
+				<td>ali13@gmail.com</td>
+				<td>800</td>
+			  </tr>
+			  <tr>
+			  	<td>Raúl Baz</td>
+				<td>Escultura</td>
+				<td>Raba@gmail.com</td>
+				<td>800</td>
+			  </tr>
+			  <tr>
+			  	<td>María Limón</td>
+				<td>Arte</td>
+				<td>Mali@hotmail.com</td>
+				<td>900</td>
+			  </tr>
+			  <tr>
+			  	<td>Fernando Gómez</td>
+				<td>Música</td>
+				<td>Fego@hotmail.com</td>
+				<td>900</td>
+			  </tr>
+			  <tr>
+			  	<td>Javier Jimenez</td>
+				<td>Teatro</td>
+				<td>Jaji@outlook.com</td>
+				<td>800</td>
+			  </tr>
+		  </tbody>
+		  <tfoot>
+		  	<tr>
+				<td></td>
+				<td></td>
+			  <td>Total de inscripción</td>
+				<td>4200</td>
+			  </tr>
+		  </tfoot>
+	  </table>
+</section>
+  <section>
+    <h2>Tabla con estilo css y uso de rowspan</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+    <table border="1" id="tabla_2">
+      <thead>
+        <tr>
+          <th> Nombre</th>
+          <th>Taller</th>
+          <th>Email</th>
+          <th>Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alicia Roldán</td>
+          <td>Pintura</td>
+          <td>ali13@gmail.co</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Raúl Baz</td>
+          <td>Escultura</td>
+          <td>Raba@gmail.com</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>María Limón</td>
+          <td>Arte</td>
+          <td>Mali@hotmail.com</td>
+          <td>900</td>
+        </tr>
+        <tr>
+          <td>Fernando Gómez</td>
+          <td>Música</td>
+          <td>Fego@hotmail.com</td>
+          <td>900</td>
+        </tr>
+        <tr>
+          <td>Javier Jimenez</td>
+          <td>Teatro</td>
+          <td>Jaji@outlook.com</td>
+          <td>800</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" style="background-color: cornflowerblue">Total de inscripción</td>
+          <td>4200</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla con cebra en horizontal o fila<h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_3">
+		<thead>
+		<tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Deporte</th>
+        </tr>
+		</thead>
+      <tbody>
+        
+        <tr>
+          <td>Luisa Solís</td>
+          <td>Lusi@gmail.com</td>
+          <td>22 23 44 55 66</td>
+          <td>15 años</td>
+          <td>Atletismo</td>
+        </tr>
+        <tr>
+          <td>Gabriela Maya</td>
+          <td>Gama@gmail.com</td>
+          <td>22 44 33 44 55</td>
+          <td>16 años</td>
+          <td>Futbol</td>
+        </tr>
+        <tr>
+          <td>María Ruíz</td>
+          <td>Maru@gmail.com</td>
+          <td>44 55 66 77 88</td>
+          <td>18 años</td>
+          <td>basquet</td>
+        </tr>
+        <tr>
+          <td>Daniel Juncal</td>
+          <td>Daju@gmail.com</td>
+          <td>22 33 44 55 77</td>
+          <td>17 años</td>
+          <td>natación</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2>Tabla con cebra en vertical o columna</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_4">
+		<thead>
+		<tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Deporte</th>
+        </tr>
+		</thead>
+      <tbody>
+        
+        <tr>
+          <td>Luisa Solís</td>
+          <td>Lusi@gmail.com</td>
+          <td>22 23 44 55 66</td>
+          <td>15 años</td>
+          <td>Atletismo</td>
+        </tr>
+        <tr>
+          <td>Gabriela Maya</td>
+          <td>Gama@gmail.com</td>
+          <td>22 44 33 44 55</td>
+          <td>16 años</td>
+          <td>Futbol</td>
+        </tr>
+        <tr>
+          <td>María Ruíz</td>
+          <td>Maru@gmail.com</td>
+          <td>44 55 66 77 88</td>
+          <td>18 años</td>
+          <td>basquet</td>
+        </tr>
+        <tr>
+          <td>Daniel Juncal</td>
+          <td>Daju@gmail.com</td>
+          <td>22 33 44 55 77</td>
+          <td>17 años</td>
+          <td>natación</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla flotante (hover)</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_5">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Deporte</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luisa Solís</td>
+          <td>Lusi@gmail.com</td>
+          <td>22 23 44 55 66</td>
+          <td>15 años</td>
+          <td>Atletismo</td>
+        </tr>
+        <tr>
+          <td>Gabriela Maya</td>
+          <td>Gama@gmail.com</td>
+          <td>22 44 33 44 55</td>
+          <td>16 años</td>
+          <td>Futbol</td>
+        </tr>
+        <tr>
+          <td>María Ruíz</td>
+          <td>Maru@gmail.com</td>
+          <td>44 55 66 77 88</td>
+          <td>18 años</td>
+          <td>basquet</td>
+        </tr>
+        <tr>
+          <td>Daniel Juncal</td>
+          <td>Daju@gmail.com</td>
+          <td>22 33 44 55 77</td>
+          <td>17 años</td>
+          <td>natación</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla receptiva</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+    <div id="tabla_receptiva">
+      <table border="1" cellspacing="5" id="tabla_6">
+        <tbody>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+          </tr>
+          <tr>
+            <td>Carmen</td>
+            <td>5</td>
+            <td>16</td>
+            <td>8</td>
+            <td>78</td>
+            <td>66</td>
+            <td>76</td>
+            <td>12</td>
+            <td>34</td>
+            <td>34</td>
+            <td>66</td>
+            <td>23</td>
+            <td>34</td>
+            <td>33</td>
+            <td>33</td>
+          </tr>
+          <tr>
+            <td>Juan</td>
+            <td>55</td>
+            <td>2</td>
+            <td>2</td>
+            <td>12</td>
+            <td>33</td>
+            <td>3</td>
+            <td>20</td>
+            <td>77</td>
+            <td>44</td>
+            <td>55</td>
+            <td>4</td>
+            <td>66</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Pedro</td>
+            <td>4</td>
+            <td>77</td>
+            <td>23</td>
+            <td>55</td>
+            <td>80</td>
+            <td>5</td>
+            <td>87</td>
+            <td>3</td>
+            <td>4</td>
+            <td>67</td>
+            <td>34</td>
+            <td>45</td>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>José</td>
+            <td>67</td>
+            <td>56</td>
+            <td>7</td>
+            <td>23</td>
+            <td>54</td>
+            <td>45</td>
+            <td>45</td>
+            <td>34</td>
+            <td>12</td>
+            <td>8</td>
+            <td>67</td>
+            <td>67</td>
+            <td>45</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</section>
+</main>
+<footer>
+  <h6>Elaborado por Alin Castillo</h6>
+</footer>
+</body>
+</html>

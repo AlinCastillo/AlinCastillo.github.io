@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios</title>
+<link href="style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+	<h1>Formularios en HTML</h1>
+	</header>
+<nav>
+	<ul id="Menú">
+	<li><a href="mi_ejercicio_diseñointer.html">Formatos textos</a></li>
+	<li> <a href="ejercicio htcss.html">Listas</a></li>
+	<li><a href="enlaces.html">Enlaces</a></li>
+	<li><a href="tablas.html">Tablas</a></li>
+	<li><a href="imagenes.html">Imágenes</a></li>
+	<li><a href="audios.html">Audios</a></li>
+	<li><a href="video.html">Videos</a></li>
+		<li><a href="index.html">HOME</a></li>
+	
+	</ul>
+	</nav>
+<main>
+	<section>
+	<h2>Formulario</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+	<form id="form1" name="form1" method="get">
+	  <label for="Nombre">Nombre:</label>
+      <input type="text" name="Nombre" id="Nombre">
+		<br><br>
+      <label for="Apellido">Apellido:</label>
+      <input type="text" name="Apellido" id="Apellido">
+		<br><br>
+      <input type="submit" name="submit" id="submit" value="Enviar">
+	  </form>
+	</section>
+	<section>
+	<h2>Formulario usando select, radio buttom y checkbox</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+	<form id="form2" name="form2" method="get">
+	  <label for="País">País:</label>
+      <select name="País" id="País">
+        <option value="Mx">México</option>
+        <option value="US">Estados Unidos</option>
+        <option value="Es">España</option>
+        <option value="Ja">Japón</option>
+        <option value="It">Italia</option>
+        <option value="Co">Colombia</option>
+      </select>
+		<br><br>
+      <label>Género</label>
+      <p>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Hombre" id="Geacutenero_0">
+          Hombre</label>
+        <br>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Mujer" id="Geacutenero_1">
+          Mujer</label>
+        <br>
+      </p>
+<br>
+      
+	  
+      <label>¿Cuál será tu residencia durante tu estancia?</label>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="residencia_temporal" value="Hotel" id="residencia_temporal_0">
+            Hotel</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="residencia_temporal" value="Particular" id="residencia_temporal_1">
+            Domicilio</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="residencia_temporal" value="Airbnb" id="residencia_temporal_2">
+            Airbnb</label></td>
+        </tr>
+      </table>
+<br>
+<input type="submit" name="submit2" id="submit2" value="Enviar">
+	 
+	  </form>
+	</section>
+	<section>
+	<h2>Formulario contacto</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id lobortis augue. Curabitur pellentesque quam aliquam velit feugiat, eu ultricies augue aliquet. Donec urna lectus, malesuada et rutrum vel, tempus id lacus. Aenean venenatis odio in fringilla ultrices. Cras in suscipit ligula, vel varius sapien. Nullam lobortis auctor elit. Sed et consectetur turpis, quis tempor quam.Duis at nibh accumsan, interdum tortor pretium, vulputate libero. Maecenas pellentesque lectus eu turpis tempor rutrum nec id tortor. Nulla quis suscipit odio, in luctus neque. Vestibulum aliquet luctus leo in volutpat. Nulla congue tellus vitae dictum volutpat. Maecenas vitae lobortis turpis. Vestibulum eget.</p>
+	<form action="procesadoaaa.html" id="form3" name="form3" method="get">
+	  <label for="textfield">Nombre</label>
+      <input name="Nombre" type="text" required="required" id="Nombre">
+      <label for="email">Email:</label>
+      <input name="email" type="email" required="required" id="email">
+		<br>
+      <label for="textarea">Mensaje</label>
+      <textarea name=Mensaje rows="6" maxlength="150" id="Mensaje" placeholder="Escribe tu mensaje"></textarea>
+      <input type="submit" name="boton3" id="boton3" value="Enviar">
+	  
+	  </form>
+	</section>
+	<section>
+	<h2>Formulario propio</h2>
+	<p>Llena el siguiente formulario.</p>
+	<form id="form4" name="form4" method="get">
+	  <label for="textfield">Nombre(s)</label>
+      <input type="text" name="Nombre" id="Nombre">
+      
+      <label for="textfield">Apellidos</label>
+      <input type="text" name="Apellidos" id="Apellidos">
+      <label for="email2">Email</label>
+      <input type="email" name="email2" id="email2">
+      <label for="password">Contraseña</label>
+      <input type="password" name="Contraseña" id="Contraseña">
+      <label for="tel">Tel</label>
+      <input type="tel" name="tel" id="tel">
+      <label for="number">Número del evento</label>
+		<br>
+      <input type="number" name="number" id="number">
+		<br>
+      <label for="date">Fecha del evento</label>
+		<br>
+      <input type="date" name="date" id="date">
+		<br>
+      <label for="time">Hora del evento</label>
+		<br>
+      <input type="time" name="time" id="time">
+		<br>
+      <label for="textarea">Mensaje</label>
+      <textarea name="textarea" id="textarea"></textarea>
+      <input type="submit" name="submit3" id="submit3" value="Enviar">
+      
+	  
+	  </form>
+</section>
+	
+	</main>
+	<footer>Elaborado por Alin Castillo</footer>
+</body>
+</html>
